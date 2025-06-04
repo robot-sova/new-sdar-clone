@@ -1,7 +1,4 @@
 ---
-import fs from 'fs';
-// Read the CSS file during build
-const criticalStyles = fs.readFileSync('./src/styles/critical.css', 'utf-8');
 import MegaMenu from '../components/MegaMenu.jsx';
 import Reviews from '../components/Reviews.jsx';
 import Footer from '../components/Footer.jsx';
@@ -37,9 +34,9 @@ const finalStructuredData = structuredData || defaultStructuredData;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
- <style is:global>
-  {criticalStyles}
-</style>
+      <style is:global>
+    @import '../styles/critical.css';
+  </style>
 		<link rel="preload" href="/bg.mp4" as="video" type="video/mp4">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
