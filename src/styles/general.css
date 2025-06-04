@@ -301,13 +301,7 @@ h2 {
   
   /*End Ofers*/
 
-  /*Parallax Header*/
-h1 {
-    font-size: 3em;
-    color: white;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
+ 
 /* 🔹 Video Container with Parallax */
 .video-container {
    position: relative; /* Ensure text remains inside */
