@@ -242,7 +242,6 @@ html {
 
 import MegaMenu from '../components/MegaMenu.jsx';
 import Reviews from '../components/Reviews.jsx';
-
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import type { BreadcrumbItem } from '../components/Breadcrumbs.astro';
 interface Props {
@@ -269,6 +268,7 @@ const defaultStructuredData = {
 	"url": canonicalURL.toString()
 };
 const finalStructuredData = structuredData || defaultStructuredData;
+
 ---
 <!doctype html>
 <html lang="en">
@@ -301,6 +301,5 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		<main style="margin-top: 4rem;">
 			<slot />
 		</main>
-	
 	</body>
 </html>
