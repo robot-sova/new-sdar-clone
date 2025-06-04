@@ -1,41 +1,7 @@
 ---
-import MegaMenu from '../components/MegaMenu.jsx';
-import Reviews from '../components/Reviews.jsx';
-import Footer from '../components/Footer.jsx';
-import Breadcrumbs from '../components/Breadcrumbs.astro';
-import type { BreadcrumbItem } from '../components/Breadcrumbs.astro';
-interface Props {
-	title?: string;
-	description?: string;
-	type?: 'website' | 'article';
-	structuredData?: object;
-	breadcrumbs?: BreadcrumbItem[];
-}
-const { 
-	title = "Astro Basics",
-	description = "Welcome to Astro Basics - A starter template for building fast websites with Astro",
-	type = "website",
-	structuredData,
-	breadcrumbs = []
-} = Astro.props;
-const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'http://localhost:4321');
 
-const defaultStructuredData = {
-	"@context": "https://schema.org",
-	"@type": "WebSite",
-	"name": title,
-	"description": description,
-	"url": canonicalURL.toString()
-};
-const finalStructuredData = structuredData || defaultStructuredData;
----
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-      <style>
-   /* Global font settings */
+const criticalCSS = `
+ /* Global font settings */
 html {
     font-family: Verdana, sans-serif;
     font-weight: 400;
@@ -279,7 +245,47 @@ html {
             }
           }
           /*MegaMenu*/
-  </style>
+`;
+
+
+import MegaMenu from '../components/MegaMenu.jsx';
+import Reviews from '../components/Reviews.jsx';
+import Footer from '../components/Footer.jsx';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import type { BreadcrumbItem } from '../components/Breadcrumbs.astro';
+interface Props {
+	title?: string;
+	description?: string;
+	type?: 'website' | 'article';
+	structuredData?: object;
+	breadcrumbs?: BreadcrumbItem[];
+}
+const { 
+	title = "Astro Basics",
+	description = "Welcome to Astro Basics - A starter template for building fast websites with Astro",
+	type = "website",
+	structuredData,
+	breadcrumbs = []
+} = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'http://localhost:4321');
+
+const defaultStructuredData = {
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	"name": title,
+	"description": description,
+	"url": canonicalURL.toString()
+};
+const finalStructuredData = structuredData || defaultStructuredData;
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+ <Fragment>
+      <style set:html={criticalCSS} />
+    </Fragment>
 
 		<link rel="preload" href="/bg.mp4" as="video" type="video/mp4">
 		<meta name="generator" content={Astro.generator} />
