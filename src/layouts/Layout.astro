@@ -242,7 +242,7 @@ html {
 
 import MegaMenu from '../components/MegaMenu.jsx';
 import Reviews from '../components/Reviews.jsx';
-import Footer from ' ../components/Footer.jsx';
+
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import type { BreadcrumbItem } from '../components/Breadcrumbs.astro';
 interface Props {
@@ -301,6 +301,6 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		<main style="margin-top: 4rem;">
 			<slot />
 		</main>
-		<Footer client:visible/>
+	
 	</body>
 </html>
