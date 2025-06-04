@@ -50,8 +50,8 @@ html {
             }
           }
           .logo-desktop
-          {margin:0!Important; 
-            padding:0!Important;}
+          {margin: 0 !important;
+padding: 0 !important;}
            /*-- sticky header*/
             .sticky-header {
               position: relative;
@@ -90,7 +90,7 @@ html {
               }
               .navbar a:hover,
               .dropdown:hover .dropbtn {
-                background-color: 990000;
+                background-color: #990000;
               }
               .dropdown-content {
                 position: absolute;
@@ -210,8 +210,8 @@ html {
                     display: none !important; /* Forcefully hide the images */
                   }
                   .dropdown .dropbtn {
-                    font-size: 15px!Important;
-                    padding: 5px 2px;;
+                    font-size: 15px!important;
+                    padding: 5px 2px;
                   }
                   .navbar a {
                     padding: 5px 5px;
@@ -242,6 +242,7 @@ html {
 
 import MegaMenu from '../components/MegaMenu.jsx';
 import Reviews from '../components/Reviews.jsx';
+import Footer from '../components/Footer.jsx';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import type { BreadcrumbItem } from '../components/Breadcrumbs.astro';
 interface Props {
@@ -301,5 +302,6 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		<main style="margin-top: 4rem;">
 			<slot />
 		</main>
+		</Footer />
 	</body>
 </html>
