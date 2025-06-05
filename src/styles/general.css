@@ -522,7 +522,7 @@ h2 {
 
   .reviews {
     display: flex;
-    margin-top:-20px;
+    margin-top:-10px;
     align-items: center;
     justify-content: space-between;
     text-align: left;
