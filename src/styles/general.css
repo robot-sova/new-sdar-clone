@@ -528,7 +528,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     border-bottom: 3px solid rgba(255, 255, 255, 0.2);
-    padding: 20px;
+    padding: 0;
     opacity: 0; /* Initially hidden */
     will-change: opacity, transform; /* Hint browser to optimize */
     animation: fadeIn 0.8s ease-out forwards;
