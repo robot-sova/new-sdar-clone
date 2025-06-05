@@ -1,0 +1,187 @@
+<style>
+    .accordion {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin: 0px auto;
+  }
+  .accordion ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+  }
+  .accordion ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 600ms ease-in-out;
+ 
+  }
+  .accordion ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+  }
+  .accordion ul li div a {
+    display: block;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    /*filter: invert(100%);*/
+    text-decoration: none;
+    font-family: Open Sans, sans-serif;
+    transition: all 300ms ease-in-out;
+  
+  }
+  .accordion ul li div a * {
+  opacity: 1;
+  transform: translateX(0);
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: normal;
+  overflow: visible;
+}
+  .accordion ul li div a h2 {
+    text-overflow: clip;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    top: 100px;
+    color:#ffffff;
+    font-size:3em!important;
+    text-shadow:
+    3px 3px 6px rgba(0, 0, 0, 0.7),
+    0 0 15px rgba(201, 160, 60, 0.4);
+  }
+  .accordion ul li div a p {
+    top: 160px;
+    font-size: 18px;
+    padding: 1em 1em 0 1em;
+    color:#ffffff;
+  }
+  .accordion ul li:nth-child(1) { 
+    background-image: url("/ventura-county-air-duct-cleaning.webp"); 
+    background-position: 70% 20%;
+  }
+  .accordion ul li:nth-child(2) { 
+    background-image: url("/los-angeles-county-air-duct-cleaning.webp"); 
+   background-position: 60% 35%;
+  }
+  .accordion ul li:nth-child(3) { 
+    background-image: url("/orange-county-air-duct-cleaning.webp"); 
+  background-position: 50% 50%;
+  }
+  .accordion ul li { background-size: cover; }
+  .accordion ul:hover li { width: 30%; }
+  .accordion ul:hover li:hover { width: 70%; }
+  /*.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }*/
+  .accordion ul:hover li:hover a * {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+   @media screen and (max-width: 680px) {
+    body { margin: 0; }
+    .accordion { height: auto; }
+    .accordion ul li,
+    .accordion ul li:hover,
+    .accordion ul:hover li,
+    .accordion ul:hover li:hover {
+      position: relative;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      -webkit-transition: none;
+      transition: none;
+    }
+    .accordion ul li div a * {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  .sliderLink {
+  position: relative;
+}
+
+.sliderLink .text-overlay {
+  background: rgba(0, 0, 0, 0.6); /* dark transparent bg */
+  padding: 20px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 4;
+}
+
+.sliderLink h2,
+.sliderLink p {
+  opacity: 1;
+  transform: none;
+  white-space: normal;
+  overflow: visible;
+  text-align: left;
+}
+
+   </style>
+   <div class="accordion">
+    <ul>
+        <li>
+            <div>
+                <div class="sliderLink" >
+              <a href="#" >
+               
+                  <h2 style="font-size:3em!important;">Ventura COunty</h2>
+                <p class="text-overlay">Breathe cleaner air with expert air duct cleaning services in Ventura County. Whether you're in the hills or near the coast, we deliver fast, reliable service you can trust—backed by years of experience and same-day availability throughout Ventura County.</p>
+                
+              </a>
+            </div>
+            </div>
+          </li>
+          <li>
+            <div>
+                <div class="sliderLink" >
+              <a href="#">
+               
+                  <h2>Los Angeles County</h2>
+                  <p class="text-overlay">
+                    Experience the difference of cleaner air with professional air duct cleaning services in Los Angeles County. From city apartments to hillside homes, we offer fast, same-day service across all of Los Angeles County. Breathe easy—your clean air starts today.
+                  </p>
+                
+              </a>
+            </div>
+            </div>
+          </li>
+          <li>
+            <div>
+                <div class="sliderLink" >
+              <a href="#">
+               
+                  <h2>Orange County</h2>
+                  <p class="text-overlay">
+                    Enjoy fresher, healthier air with expert air duct cleaning services in Orange County. From coastal communities to inland neighborhoods, we offer fast, professional service throughout Orange County—with same-day appointments available. Clean air is just a call away.
+                  </p>
+                
+              </a>
+            </div>
+            </div>
+          </li>
+    
+    </ul>
+   </div>
