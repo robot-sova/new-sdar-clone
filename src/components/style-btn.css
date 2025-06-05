@@ -1,0 +1,142 @@
+
+.button-call-global a {
+  padding: 14px 6px;
+  font-size:0.8em;
+}
+.full-button-global {
+  max-width: 400px;
+  display: inline-flex;
+  margin: 15px 0px;
+
+}
+.button-top-global {
+  display: inline-block;
+  width: 50px;
+  height: 53px;
+  margin: 0 10px 0 0;
+  background-color: #090909;
+  border-radius: 7px;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgba(48, 34, 34, 0.12);
+}
+
+/* .button-top-global:hover {
+  background-color: #ca0913;
+} */
+
+.button-top-global a {
+  display: grid;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.button-top-global svg {
+  margin: -1px 3px 0px 3px ;
+}
+
+.button-top-global p {
+  line-height: 1em ;
+  margin: -5px 0 3px 0 !important;
+  color: #fff !important;
+}
+
+
+.button-book-global {
+  display: inline-block;
+  align-self: center;
+  margin: 0 10px 0 0;
+  max-width: 145px;
+  height: 53px;
+}
+
+.button-book-global button {
+  font-weight: 700 !important;
+  height: 100%;
+  line-height: 1.14;
+  padding: 7px 24px;
+  box-shadow: none;
+  border-radius: 7px;
+  color: #fff;
+  background-color: #ca0913;
+  text-transform: uppercase;
+  position: relative;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  text-indent: 0px;
+  text-shadow: none;
+  align-items: center;
+  overflow: hidden;
+  max-width: 145px;
+  justify-self: center;
+  white-space: nowrap;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  text-shadow: 1.2px 1.2px 2px black;
+  
+}
+
+.button-book-global:hover button {
+  background-color: black;
+  transition: 0.25s;
+}
+.button-call-global {
+  /* display: inline-block; */
+  display: grid;
+  max-width: 180px;
+  height: 53px;
+  background-color: #ca0913;
+  box-shadow: inset 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  border-radius: 7px;
+  align-self: center;
+  margin:5px;
+  justify-self: center;
+}
+.button-call-global a {
+  padding: 13px 24px;
+  width: auto;
+  height: auto;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  color: #fff;
+  margin: 0 !important;
+  font-weight: 700;
+  transform: scale(1, 1.1);
+  white-space: nowrap;
+  text-shadow: 1.2px 1.2px 2px black;
+}
+
+.button-call-global:hover {
+  background-color: #333;
+  border:1px solid red;
+  transition: 0.25s;
+}
+
+
+@media (max-width:768px) {
+
+  .button-top-global {
+    margin: 0 6px 0 0;
+  }
+
+  .button-book-global {
+    margin: 0 6px 0 0;
+    margin:5px;
+  }
+
+
+  .button-book-global button {
+    padding: 7px 6px;
+    font-size: 0.8em;
+  }
+
+
+}
