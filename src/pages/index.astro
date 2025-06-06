@@ -5,6 +5,7 @@ import Offers from '../components/Offers.jsx'
 import Services from '../components/Services.jsx'
 import { Tabs } from '../components/tabs/Refrigerator.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
+import Areas from "../components/Areas.astro";
 import '../styles/general.css';
 
 const structuredData = {
@@ -24,20 +25,20 @@ const breadcrumbs = [
 	{ text: 'Welcome' }
 ];
 ---
-
 <Layout
 	title="Same Day Appliance Repair Appliance Repair"
 	description="Luxury Appliance Repair Services"
 	structuredData={structuredData}
 >
 <ParallaxHeader client:idle/>
+
 <div id="maincontent">
-<p>AAA + BBB + CCCC</p>
 <section>
 </section>
 </div>
 <Services client:visible/>
 <Offers client:visible/>
-<Tabs client:visible/>
 <Brands client:visible/>
+<Tabs client:visible/>
+<Areas />
 </Layout>
